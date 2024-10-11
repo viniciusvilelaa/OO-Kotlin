@@ -1,4 +1,4 @@
-class person(val nome:String, val cpf: String, val dataNasc: String){
+class person(val nome:String, var idade: Int, var dataNasc: String){
     fun andar(){
         println("Pessoa Andando")
     }
@@ -7,10 +7,20 @@ class person(val nome:String, val cpf: String, val dataNasc: String){
 }
 
 fun main(){
-    val pessoa = person("Vinicius","123123", "101010")
+    val pessoa = person("Vinicius",21, "101010")
 
     with(pessoa){
-        
+        andar()
+        println("Nome: $nome")
+        println("Idade: $idade")
+        println("Nascimento: $dataNasc")
+
+        idade += 1
+        dataNasc = "Teste"
+
+        println(idade)
     }
+
+
 
 }
