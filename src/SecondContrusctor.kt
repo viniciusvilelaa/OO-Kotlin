@@ -5,7 +5,7 @@ class SecondContrusctor() {
     var dataNascimento = ""
 
     //Second Constructor
-    //Não é permgitjido nem criar variaveis nem inicilizar variaveis com parametros no contrusctor secondario
+    //Não é permgittestejido nem criar variaveis nem inicilizar variaveis com parametros no contrusctor secondario
     constructor(nome: String, cpf: String, dataNascimento: String): this(){
         this.nome = nome
         this.cpf = cpf
